@@ -42,7 +42,7 @@ stream = p.open(
     rate=16000,
     input=True,
     frames_per_buffer=8000,
-    input_device_index=4
+    input_device_index=int(input("Номер устройства"))
 )
 stream.start_stream()
 
